@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Algereya";
+    src: url('../fonts/Alegreya/static/Alegreya-Regular.ttf');
+ }
+
+ @font-face {
+    font-family: "Algereya Sans";
+    src: url('../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf');
+ }
+
+
+ /** Home Section **/
+ #home{
+    background-image: url('../Bakery images/images/drew-coffman-1872.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+ }
+
+#home .caption{
+    text-align: center;
+    padding: 15%;
+    
+ }
+
+ #home .welcome{
+    font-family: 'Algereya Sans', 'sans-serif';
+    font-size: 25px;
+    font-weight: 100;
+ }
+
+ #home .heading{
+    font-family: 'Algereya' , 'Arial';
+    font-size: 60px;
+    font-weight: 500;
+ }
+
+ #home .intro{
+    font-family: 'Algereya Sans', 'sans-serif';
+    font-size: 25px;
+    font-weight: 100;
+    padding: 3%;
+
+ }
+
+ .btn1, .btn2{
+    font-family: 'Algereya Sans', 'sans-serif';
+    font-weight: 400;
+    font-size: 20;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2px;
+    padding: 1.5% 3%;
+    margin: 0 5px;
+ }
+
+ .btn1{
+    background-color: #8E7754;
+    border-color: #8E7754;
+
+ }
+
+ .btn2{
+    background-color: transparent;
+    border-color: white;
+
+ }
+ .btn1:hover, .btn2:hover{
+    background-color: white;
+    border-color: white;
+    color: black;
+ }
+
+ .downButton{
+    margin: auto;
+    display: block;
+    width: 2.5%;
+    height: 6%;
+    background-color: transparent;
+    border: 2px white solid;
+    opacity: 50%;
+    border-radius: 25px;
+    margin-top: 10%;
+ }
+
+ /** About Section**/
+ #about{
+    height: 100vh;
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: white;
+ }
+
+ .about-img img, .about-info{
+    text-align: left;
+    width: 50%;
+    float: left;
+ }
+
+.about-info{
+    padding-top:20;
+}
+
+.about-list{
+    list-style: none;
+    padding: 10;
+ }
+
+.about-info p, .about-info h2{
+    padding: 2.5% 10%;
+}
+
+.about-list-item img{
+    width: 40;
+    height: 40;
+    margin: 0 25 0 50;
+    float: left;
+    border: 0.5px lightgrey solid;
+    border-radius: 50%;
+}
+
+
+/**Location Section**/
+#location{
+    background-color: #F8F8F8;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 5%;
+
+}
+
+.location-img img, .location-info{
+    text-align: left;
+    width: 50%;
+    float: left;
+ }
+
+ .location-info{
+    margin-top: 10%;
+ }
+
+.location-info p, .location-info h2{
+    padding: 2% 10% 2% 0%;
+}
+
+
+/**Baking Section**/
+#baking{
+    background-color: white;
+    height: 100vh;
+    text-align: center;
+    padding: 5% 2%;
+}
+
+.baking-card img{
+    width: 100%;
+}
+
+.baking-card{
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 5% 1%;
+}
+
+.baking-card .secondaryHeader{
+    font-size: 25;
+    padding: 5% 0;
+}
+
+.baking-card .secondaryParagraph{
+    font-size: 16;
+    line-height: 2;
+
+}
+
+
+/**Contact Section**/
+ #contact{
+    height: 100vh;
+    padding: 2.5%;
+    box-sizing: border-box;
+    background-color: #F8F8F8;
+ }
+
+ .contact-img img, .contact-info{
+    text-align: left;
+    width: 50%;
+    float: left;
+ }
+
+.contact-info{
+    padding-top:20;
+}
+
+.contact-list{
+    list-style: none;
+    padding: 10;
+ }
+
+.contact-info p, .contact-info h2{
+    padding: 2.5% 10%;
+}
+
+.contact-list-item img{
+    width: 40;
+    height: 40;
+    background-color: #8E7754;
+    margin: 0 25 0 50;
+    float: left;
+    border: 0.5px lightgrey solid;
+    border-radius: 50%;
+}
+
+/**Footer Section**/
+#footer{
+    background-color: #403D38;
+    height: 50vh;
+    padding: 5% 2.5%;
+}
+
+#footer .secondaryHeader{
+    font-size: 20;
+}
+
+.footer-about, .footer-special, .footer-opeiningHours, .footer-contact{
+    width: 25%;
+    float: left;
+}
+
+.footer-about p{
+    padding: 2%;
+    line-height: 2;
+    font-size: 16;
+}
+
+.footer-contact {
+    position: relative;
+}
+
+.footer-contact .bg{
+    position: absolute;
+    margin-top: 10%;
+    opacity: 0.3;
+}
+
+.footer-list{
+    list-style: none;
+ }
+
+
+.footer-list-item{
+    font-family: 'Algereya Sans', 'sans-serif';
+    color: #969696;
+    width: 90%;
+    line-height: 3;
+    border-bottom: 1px #4b4a4a solid;
+ }
+
+ .footer-list-item p{
+    padding: 3%;
+    color: #969696;
+ }
+
+ .footer-list-item:last-child{
+    border: none;
+ }
+
+.footer-list-item img{
+    width: 40;
+    height: 40;
+    float: left;
+}
+
+
+/**Final Footer**/
+#final-footer{
+    height: 50vh;
+    background-color: #353330;
+    padding: 5%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.copyright{
+    margin: 2.5% 0;
+    color: #969696;
+    font-family: 'Algereya Sans', 'sans-serif';
+    font-size: 15px;
+}
+.footer-social img{
+    width: 50;
+    height: 50;
+    background-color: #4b4a4a;
+    border-radius: 50%;
+}
+
+.fb:hover{
+    background-color: #3B5998;
+}
+
+.tw:hover{
+    background-color: #00ACED;
+}
+
+.li:hover{
+   background-color: #007BB5;
+}
+
+.gp:hover{
+    background-color: #DD4B39;
+
+}
+
+
+/**font sttyles**/
+ .secondaryHeader{
+    font-family: 'Algereya', 'serif';
+    font-size: 32px;
+    font-weight: 100;
+    margin: 2% 0;
+ }
+
+ .secondaryParagraph{
+    font-family: 'Algereya Sans', 'sans-serif';
+    color: #686868;
+    font-size: 20px;
+    line-height: 1.5;
+ }
+
+
+
+/** defaults **/
+.clear{
+    clear: both;
+}
+
+ .white{
+    color: white;
+ }
+
+ .grey{
+    color: #969696;
+ }
