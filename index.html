@@ -7,9 +7,65 @@
 </head>
 <body>
     <div id="home">
-        <div class="navbar">
-
+        <div class="navbar" >
+            <img src="./Bakery images/images/bakery-light-1.png" alt="Bakery">
+            <ul class="navbar-list">
+                <li class="navbar-list-item">
+                    <a class="navbar-list-item-link" href="#brdr">
+                        <div id="brdr"></div>
+                        Home
+                    </a>
+                </li>
+                <li class="navbar-list-item">
+                    <a class="navbar-list-item-link" href="#brdr1">
+                        <div id="brdr1"></div>
+                        About
+                    </a>
+                </li>
+                <li class="navbar-list-item">
+                    <a class="navbar-list-item-link" href="#brdr2">
+                        <div id="brdr2"></div>
+                        Our offer
+                    </a>
+                </li>
+                <li class="navbar-list-item">
+                    <a class="navbar-list-item-link" href="#brdr3">
+                        <div id="brdr3"></div>
+                        Gallery
+                    </a>
+                </li>
+                <li class="navbar-list-item">
+                    <a id="blog-btn" class="navbar-list-item-link" href="#brdr4">
+                        <div id="brdr4"></div>
+                        Blog
+                        <div class="blog-section">
+                            <ul class="blog-list">
+                                <li class="blog-list-item">
+                                    <a href="#">blog index</a>
+                                </li>
+                                <li class="blog-list-item">
+                                    <a href="#">simple post</a>
+                                </li>
+                                <li class="blog-list-item">
+                                    <a href="#">gallery post</a>
+                                </li>
+                                <li class="blog-list-item">
+                                    <a href="#">basic post</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="navbar-list-item">
+                    <a class="navbar-list-item-link" href="#brdr5">
+                        <div id="brdr5"></div>
+                        Contact
+                    </a>
+                </li>
+            </ul>
         </div>
+        <div class="clear"></div>
+
         <div class="caption">
             <h3 class="welcome white">Welcome to</h3>
             <h1 class="heading white">Family Bakery</h1>
@@ -31,7 +87,7 @@
             <p class="secondaryParagraph">We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
             <ul class="about-list">
                 <li class="about-list-item">
-                    <img src="Bakery images/images/Icons/leaf.png" alt="leaf icon">
+                    <img src="./Bakery images/images/Icons/leaf.png" alt="leaf icon">
                     <p class="secondaryParagraph">We care about environment.</p>
                 </li>
                 <li class="about-list-item">
@@ -79,6 +135,7 @@
                 <p class="secondaryParagraph">Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere.</p>
             </div>
 
+            
             <div class="baking-card">
                 <img src="./Bakery images/images/stas-ovsky.jpg" alt="">
                 <h1 class="secondaryHeader">Bagels</h1>
@@ -162,6 +219,7 @@
         <div class="footer-contact">
             <h2 class="secondaryHeader white">Contact details</h2>
             <img class="bg" src="./Bakery images/images/contact-details-map.png" alt="background map">
+
             <ul class="footer-list">
                 <li class="footer-list-item">
                     <img src="./Bakery images/images/Icons/location.png" alt="leaf icon">
@@ -186,14 +244,44 @@
     </div>
 
     <div id="final-footer">
-        <img src="./Bakery images/images/bakery-light-1.png" alt="" class="final-footer-img">
+        <img src="/Bakery images/images/bakery-light-1.png" alt="" class="final-footer-img">
         <p class="copyright">Copyright 2017. All rights reserved.</p>
         <div class="footer-social">
-            <img class="fb" src="./Bakery images/images/Icons/twitter.png" alt="facebook">
+            <img class="fb" src="./Bakery images/images/Icons/facebook.png" alt="facebook">
             <img class="tw" src="./Bakery images/images/Icons/twitter.png" alt="twitter">
             <img class="li" src="./Bakery images/images/Icons/linkedin.png" alt="linkedin">
-            <img class="gp" src="./Bakery images/images/Icons/google.png" alt="googlePlus">        
+            <img class="gp" src="./Bakery images/images/Icons/google.png" alt="google plus">        
         </div>
     </div>
+
+
+    <script>
+        const nav = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) nav.style.background = 'white';
+            else nav.style.background = 'transparent';
+        });
+
+
+        var navbarImg = document.querySelector('.navbar img')
+        var navbar = document.querySelectorAll('.navbar-list-item-link')
+        window.onscroll = function() {
+        // pageYOffset or scrollY
+            for (i = 0; i < navbar.length; ++i){
+                if(window.pageYOffset > 100) {
+                    navbarImg.src = "./Bakery images/images/bakery-color.png"
+                    navbar[i].classList.add('scrolled')
+                } 
+                else{
+                    navbarImg.src = "./Bakery images/images/bakery-light-1.png"
+                navbar[i].classList.remove('scrolled')
+                }
+            }
+        }
+
+        // document.getElementById("imageelement").src = "image.jpeg";
+       
+    </script>
+
 </body>
 </html>
