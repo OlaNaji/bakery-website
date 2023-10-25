@@ -95,9 +95,11 @@
     position: fixed;
     box-sizing: border-box;
     padding: 20px 40px;
+    width: 100%;
+    z-index: 100; 
     left: 0;
     top: 0;
-    width: 100%;
+    
  }
 
 
