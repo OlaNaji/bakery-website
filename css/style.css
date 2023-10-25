@@ -404,19 +404,24 @@
 
 .fb:hover{
     background-color: #3B5998;
+    transition: all 0.3s ;
+
 }
 
 .tw:hover{
     background-color: #00ACED;
+    transition: all 0.3s ;
+
 }
 
 .li:hover{
    background-color: #007BB5;
+   transition: all 0.3s ;
 }
 
 .gp:hover{
     background-color: #DD4B39;
-
+    transition: all 0.3s ;
 }
 
 
