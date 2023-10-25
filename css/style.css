@@ -21,6 +21,7 @@
     height: 100vh;
  }
 
+
 #home .caption{
     text-align: center;
     padding: 15%;
@@ -73,6 +74,7 @@
     background-color: white;
     border-color: white;
     color: black;
+    transition: all 0.5s ;
  }
 
  .downButton{
@@ -86,6 +88,108 @@
     border-radius: 25px;
     margin-top: 10%;
  }
+
+
+ /**Navigation Bar**/
+ .navbar{
+    position: fixed;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+ }
+
+
+ .navbar img{
+    width: 15%;
+    float: left;
+ }
+
+ .navbar-list{
+    list-style: none;
+    float: right;
+ }
+
+ .navbar-list-item{
+    display: inline-block;
+    padding: 10px;
+}
+
+ .navbar-list-item-link{
+    font-family: 'Algereya' , 'Arial';
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+
+#brdr, #brdr1, #brdr2, #brdr3, #brdr4, #brdr5{
+    border-top: 5px #8E7754 solid;
+    display: none;
+}
+
+#brdr:target, #brdr1:target, #brdr2:target, #brdr3:target, #brdr4:target, #brdr5:target{
+    display: block;
+    top: 0;
+}
+
+ .navbar-list-item a:hover{
+    color: #8E7754;
+    transition: all 0.3s ;
+ }
+
+ .scrolled{
+    background-color: white;
+    transition: all 0.3s ;
+    color: black;
+ }
+
+
+ /**Blog list**/
+ .blog-section{
+    display: none;
+    background-color: #443F39;
+    text-align: left;
+    width: 15%;
+    right: 10%;
+    top: 75%;
+    position: absolute;
+ }
+
+
+.blog-list {
+    list-style: none;
+}
+
+
+.blog-list-item {
+    box-sizing: border-box;
+    padding: 10 20;
+
+}
+
+
+.blog-list-item a{
+    text-decoration: none;
+    font-family: 'Algereya' , 'Arial';
+    font-size: 16px;
+    color: #dfdfdf;
+}
+
+
+.blog-list-item:hover{
+    background-color: #8E7754;
+    right: 11%;
+    transition: all 0.3s ;
+    color: white;
+}
+
+.navbar-list-item:hover .blog-section{
+    transition: all 0.2s ;
+    display: block;
+}
+
 
  /** About Section**/
  #about{
@@ -178,7 +282,6 @@
 
 }
 
-
 /**Contact Section**/
  #contact{
     height: 100vh;
@@ -241,6 +344,7 @@
 .footer-contact {
     position: relative;
 }
+
 
 .footer-contact .bg{
     position: absolute;
